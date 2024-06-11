@@ -14,13 +14,7 @@ paths:
         200:
           description: success
           content:
-            text/plain:
-              schema:
-                $ref: '#/components/schemas/Product'
             application/json:
-              schema:
-                $ref: '#/components/schemas/Product'
-            text/json:
               schema:
                 $ref: '#/components/schemas/Product'
       parameters:
