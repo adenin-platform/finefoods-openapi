@@ -3,7 +3,7 @@ info:
   title: FineFoods
   version: 1.0.0
 servers:
-  - url: https://api.finefoods.refine.dev/
+  - url: https://api.finefoods.refine.dev
 paths:
   /products:
     get:
@@ -16,7 +16,9 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Product'
+                type: array
+                items:
+                  $ref: '#/components/schemas/Product'
       parameters:
         - name: description_like
           in: query
